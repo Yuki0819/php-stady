@@ -1,0 +1,10 @@
+php ./kadai1/q1.php
+php ./kadai1/q2.php
+php ./kadai1/q3.php
+php ./kadai1/q4.php
+php ./kadai1/q5.php
+php ./kadai1/q6.php
+php ./kadai1/q7.php
+php ./kadai1/q8.php
+php ./kadai1/q9.php
+php ./kadai1/q10.php
