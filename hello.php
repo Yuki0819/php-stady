@@ -25,13 +25,14 @@
  echo $var2;
 
  //結合代入
+ // 文字列をstringと呼ぶ
 $str1 = '文字列1';
 $str1 .= '文字列2';
 echo $str1;
 echo "\n";
 
  echo "========================================================\n";
-
+//　整数をintやintegerと呼ぶ
  echo "四則演算\n";
 
  echo "加算\n";
@@ -50,7 +51,7 @@ echo "\n";
  echo 10 / 2;
  echo "\n";
 
-
+ echo "余りの計算\n";
  echo 10 % 3;
  echo "\n";
 
@@ -61,6 +62,7 @@ echo "\n";
 
  $num = 10;
 
+ // if (条件) { 処理 }
  if ($num == 10) {
     echo "numは10です\n";
  }
@@ -70,7 +72,7 @@ echo "\n";
  }
 
  if ($num < 20) {
-    echo "numは5より小さいです\n";
+    echo "numは20より小さいです\n";
  }
 
  if ($num >= 5) {
