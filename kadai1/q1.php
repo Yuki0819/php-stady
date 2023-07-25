@@ -4,6 +4,6 @@
 $num = 15; 
 
 if ($num > 10) {
-    echo "num is greater than 10";
+    echo "num is greater than 10\n";
 }
 ?>

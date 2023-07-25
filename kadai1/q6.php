@@ -4,5 +4,5 @@
 $num = 0;
 
 if ($num % 2 == 0)
-echo "num is non-negative and even"
+echo "num is non-negative and even\n"
 ?>
