@@ -5,12 +5,12 @@ php
 $pets = ["Dog", "Cat", "Rabbit", "Hamster", "Bird"];
 
 <?php
-$pets = array("Dog", "Cat", "Rabbit", "Hamster", "Bird");
-$pets = array(
-    'Dog' => '3',
-    'Cat' => '3',
-    'Rabbit' => '6', 
-    'Hamster' => '7',
-    'Bird' => '4'
-);
+$pets = ["Dog", "Cat", "Rabbit", "Hamster", "Bird"];
+
+foreach ($pets as $pet) {
+    $word = strlen($pet);
+    echo $pet . "の名前の長さは" . $word . "文字です";
+    echo "<br>";
+}
+
 ?>

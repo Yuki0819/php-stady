@@ -6,3 +6,21 @@ $students = [
     "Bob" => ["Math" => "passed", "English" => "failed", "Science" => "passed"],
     "Charlie" => ["Math" => "failed", "English" => "passed", "Science" => "failed"],
 ];
+<?php
+$students = [
+    "Alice" => ["Math" => "passed", "English" => "passed", "Science" => "passed"],
+    "Bob" => ["Math" => "passed", "English" => "failed", "Science" => "passed"],
+    "Charlie" => ["Math" => "failed", "English" => "passed", "Science" => "failed"],
+];
+
+foreach ($students as $name => $grades) {
+    echo "$name's grades:\n";
+    foreach ($grades as $subject => $result) {
+        echo "$subject: $result\n";
+    }
+    if (array_search("failed", $grades) === false) {
+        echo "$name is a top student!\n";
+    }
+    echo "\n";
+}
+?>
