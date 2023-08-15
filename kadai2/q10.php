@@ -14,7 +14,7 @@ $students = [
 ];
 
 foreach ($students as $name => $grades) {
-    echo "$name's grades:\n";
+    echo "$name's grades\n";
     foreach ($grades as $subject => $result) {
         echo "$subject: $result\n";
     }

@@ -9,8 +9,7 @@ $pets = ["Dog", "Cat", "Rabbit", "Hamster", "Bird"];
 
 foreach ($pets as $pet) {
     $word = strlen($pet);
-    echo $pet . "の名前の長さは" . $word . "文字です";
-    echo "<br>";
+    echo $pet . "の名前の長さは" . $word . "文字です\n";
 }
 
 ?>

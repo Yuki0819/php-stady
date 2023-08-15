@@ -5,8 +5,8 @@ php
 $fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
 
 <?php
-$fruits_list = array("Apple", "Banana", "Cherry", "Date", "Elderberry");
-foreach ($fruits_list as $fruits) {
-    echo "$fruits\n";  
+$fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+foreach ($fruits as $fruit) {
+    echo "$fruit\n";  
     }
 ?>

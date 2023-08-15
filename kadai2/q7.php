@@ -19,6 +19,5 @@ $fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
 
 foreach ($fruits as $number => $fruit) {
     echo "$number $fruit\n";    
-    echo "<br>";
 }
 ?>
