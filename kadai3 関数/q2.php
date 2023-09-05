@@ -2,9 +2,9 @@
 
 - **要件**: 引数に名前を取り、"Hello, [名前]!"と出力する関数`sayHelloTo`を定義してください。
 <?php
-sayHello("名前");
+sayHelloTo("名前");
 
-function sayHello($sayHello){
-echo ("Hello" + $sayHello + "!");
-}
+function sayHelloTo($name) {
+echo "Hello,$name!";
+} 
 ?>
