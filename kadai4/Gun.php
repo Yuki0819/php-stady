@@ -8,14 +8,17 @@ class Gun {
     private $maxMagazine;
     // 残弾
     private $currentMagazine;
+    //拡張マガジン
+    private $setExtendedMagazine;
     // ↑フィールド============================
 
     // コンストラクタ
-    function __construct($name, $maxMagazine) {
+    function __construct($name, $maxMagazine,$currentMagazine,$setExtendedMagazine) {
         // 問題1
         $this->name = $name;
         $this->maxMagazine = $maxMagazine;
         $this->currentMagazine = 0;
+        $this->setExtendedMagazine = $setExtendedMagazine;
     }
 
     // 現在の状態を表示
@@ -31,10 +34,10 @@ class Gun {
     // リロード
     function relaod() {
         // 問題2
-        if ($this->currentMagazine = $this->maxMagazine) {
-            $this->maxMagazine == $this->currentMagazine;
+        if ($this->currentMagazine == $this->maxMagazine) {
+            $this->maxMagazine = $this->currentMagazine;
                 echo "リロードの必要はありません\n";
-              }
+        }
     }
 
     // 発砲
@@ -52,12 +55,34 @@ class Gun {
     }
 
     // 拡張マガジンを装着
-    function setExtendedMagazine() {
+    function setExtendedMagazine($setExtendedMagazine) {
         // 問題4
+        //if (is_int($setExtendedMagazine) > 0)←これはできない
+       
+        //is_int(value) => true or falseで表示される
+
+        if (is_int($setExtendedMagazine) && $setExtendedMagazine > 0) {
+            // 後続処理
+            $this->maxMagazine += $setExtendedMagazine; 
+            $this->relaod(); 
+        } else {
+            echo "引数が不正です\n";
+            return;
+            }
+        
+           
+            
+        
+
+        //エラーメッセージ
+        
+        return;
     }
 
     // 拡張マガジンを取外し
     function unsetExtendedMagazine() {
         // 問題4
+        $this->setExtendedMagazine = 0;
+       echo "拡張マガジンは装着されていません\n";
     }
 }
