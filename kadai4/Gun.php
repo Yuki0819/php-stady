@@ -82,7 +82,11 @@ class Gun {
     // 拡張マガジンを取外し
     function unsetExtendedMagazine() {
         // 問題4
-        $this->setExtendedMagazine = 0;
-       echo "拡張マガジンは装着されていません\n";
+       if ($this->setExtendedMagazine > $this->maxMagazine) {
+        $this->maxMagazine -= $this->setExtendedMagazine;
+       } else {
+        echo "拡張マガジンは装着されていません\n";
+       }
+       
     }
 }
