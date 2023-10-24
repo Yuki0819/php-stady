@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-
+use Illuminate\Support\Facades\DB;
 class TodoListSeeder extends Seeder
 {
     /**
@@ -22,11 +22,6 @@ class TodoListSeeder extends Seeder
           ],
           [
             'name' => 'テスト2',
-            'created_at' => now(),
-            'updated_at' => now(),
-          ],
-          [
-            'name' => 'テスト3',
             'created_at' => now(),
             'updated_at' => now(),
           ],
